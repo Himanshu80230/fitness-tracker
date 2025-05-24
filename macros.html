@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macros - Fitness Tracker</title>
+  <link rel="stylesheet" href="macros.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo animate__animated animate__fadeInLeft">
+        <img src="1600w-oqe3ybeEcQQ.webp" alt="Fitness Tracker Logo">
+        <h1>Fitness Tracker</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="animate__animated animate__fadeInDown">Home</a></li>
+          <li><a href="index.html#workouts" class="animate__animated animate__fadeInDown">Workouts</a></li>
+          <li><a href="index.html#nutrition" class="animate__animated animate__fadeInDown">Nutrition</a></li>
+          <li><a href="index.html#progress" class="animate__animated animate__fadeInDown">Progress</a></li>
+          <li><a href="index.html#contact" class="animate__animated animate__fadeInDown">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Macronutrients Hero Section -->
+  <section class="macronutrients-hero">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeInUp">Macronutrients Tracker</h2>
+      <p class="animate__animated animate__fadeInUp animate__delay-1s">Track your protein, carbs, and fats to optimize your nutrition.</p>
+      <a href="#macronutrients-calculator" class="btn animate__animated animate__fadeInUp animate__delay-2s">Calculate Macronutrients</a>
+    </div>
+  </section>
+
+  <!-- Macronutrients Calculator Section -->
+  <section id="macronutrients-calculator" class="macronutrients-calculator">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeInLeft">Macronutrients Calculator</h2>
+      <form id="macronutrients-form" class="animate__animated animate__fadeInUp">
+        <div class="form-group">
+          <label for="protein">Protein (grams)</label>
+          <input type="number" id="protein" name="protein" required>
+        </div>
+        <div class="form-group">
+          <label for="carbs">Carbohydrates (grams)</label>
+          <input type="number" id="carbs" name="carbs" required>
+        </div>
+        <div class="form-group">
+          <label for="fats">Fats (grams)</label>
+          <input type="number" id="fats" name="fats" required>
+        </div>
+        <button type="submit" class="btn">Calculate</button>
+      </form>
+      <div id="macronutrients-result" class="animate__animated animate__fadeInUp animate__delay-1s">
+        <h3>Your Macronutrients Breakdown:</h3>
+        <p><strong>Total Grams:</strong> <span id="totalGrams">0</span>g</p>
+        <p><strong>Total Calories:</strong> <span id="totalCalories">0</span>kcal</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Macronutrients Tips Section -->
+  <section class="macronutrients-tips">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeInLeft">Macronutrients Management Tips</h2>
+      <div class="tips-grid">
+        <div class="tip animate__animated animate__fadeInUp">
+          <h3>Prioritize Protein</h3>
+          <p>Protein helps build and repair muscles. Include lean sources like chicken, fish, and beans.</p>
+        </div>
+        <div class="tip animate__animated animate__fadeInUp animate__delay-1s">
+          <h3>Choose Complex Carbs</h3>
+          <p>Opt for whole grains, fruits, and vegetables for sustained energy.</p>
+        </div>
+        <div class="tip animate__animated animate__fadeInUp animate__delay-2s">
+          <h3>Include Healthy Fats</h3>
+          <p>Incorporate sources like avocados, nuts, and olive oil for heart health.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Fitness Tracker. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="macros.js"></script>
+</body>
+</html>

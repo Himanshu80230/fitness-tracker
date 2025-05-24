@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #007BFF, #00C9FF);
+  color: #fff;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6f61;
+}
+
+/* Strength Training Hero Section */
+.strength-hero {
+  background: url('images/milan-csizmadia-pAlhyoKWlPo-unsplash.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.strength-hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.strength-hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.strength-hero .btn {
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.strength-hero .btn:hover {
+  background: #e65a50;
+}
+
+/* Strength Training Types Section */
+.strength-types {
+  background: url('images/charles-gaudreault-xXofYCc3hqc-unsplash.jpg') no-repeat center center/cover;
+  padding: 60px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.strength-types h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.strength-card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.strength-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.strength-card h3 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.strength-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.strength-card .btn {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.strength-card .btn:hover {
+  background: #ff6f61;
+}
+
+/* Parallax Section */
+.parallax-section {
+  background: url('images/strengh-training.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.parallax-content h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.parallax-content p {
+  font-size: 18px;
+}
+
+/* Strength Training Tips Section */
+.strength-tips {
+  background: url('images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg') no-repeat center center/cover;
+  padding: 60px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.strength-tips h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tip {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.tip h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.tip p {
+  font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}

@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  header {
+    background: rgba(106, 17, 203, 0.9); /* Glass morphism effect */
+    color: white;
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  header .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #ffdd57;
+  }
+  
+  /* Hero Section */
+  .cardio-hero {
+    
+    color: white;background: url('https://images.unsplash.com/photo-1596357395217-80de13130e92?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cardio-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .cardio-hero h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cardio-hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cardio-hero .btn {
+    background: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cardio-hero .btn:hover {
+    background: #ff3b2f;
+    transform: scale(1.1);
+  }
+  
+  /* Cardio Types Section */
+  .cardio-types {
+    padding: 100px 0;
+    background: url('images/jonathan-borba-zfPOelmDc-M-unsplash.jpg') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cardio-types::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text visibility */
+  }
+  
+  .cardio-types h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .cardio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cardio-card {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cardio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardio-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .cardio-card h3 {
+    font-size: 1.8rem;
+    margin: 20px;
+  }
+  
+  .cardio-card p {
+    margin: 0 20px 20px;
+    color: #666;
+  }
+  
+  .cardio-card .btn {
+    display: block;
+    background: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .cardio-card .btn:hover {
+    background: #6a11cb;
+  }
+  
+  /* Parallax Section */
+  .parallax-section {
+    background: url('images/alora-griffiths-sAKQGX1Krs8-unsplash.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .parallax-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .parallax-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .parallax-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .parallax-content p {
+    font-size: 1.5rem;
+  }
+  
+  /* Cardio Tips Section */
+  .cardio-tips {
+    padding: 100px 0;
+    background: url('https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cardio-tips::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text visibility */
+  }
+  
+  .cardio-tips h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+  
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tip {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tip:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tip h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .tip p {
+    color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+  }

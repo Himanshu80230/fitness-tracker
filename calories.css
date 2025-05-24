@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #007BFF, #00C9FF);
+  color: #fff;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00C9FF;
+}
+
+/* Calories Hero Section */
+.calories-hero {
+    background: url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    color: #fff; /* White color for text */
+    text-align: center;
+    padding: 100px 20px;
+    position: relative; /* Needed for the overlay */
+  }
+  
+  .calories-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+    z-index: 1;
+  }
+  
+  .calories-hero h2,
+  .calories-hero p,
+  .calories-hero .btn {
+    position: relative;
+    z-index: 2; /* Ensure text is above the overlay */
+  }
+  
+  .calories-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  }
+  
+  .calories-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  }
+  
+  .calories-hero .btn {
+    background: #ff6f61; /* A bright color for the button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .calories-hero .btn:hover {
+    background: #e65a50; /* Darker shade on hover */
+  }
+
+/* Calorie Calculator Section */
+.calories-calculator {
+  background: url('images/artur-luczka-OPeSKKUMva4-unsplash.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.calories-calculator h2 {
+  margin-bottom: 40px;
+}
+
+#calories-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#calories-result {
+  margin-top: 30px;
+}
+
+#calories-result h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#calories-result p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007BFF;
+}
+
+/* Calorie Tips Section */
+.calories-tips {
+   
+  padding: 60px 20px;
+  text-align: center;
+  background: url('images/willian-justen-de-vasconcellos-T_Qe4QlMIvQ-unsplash.jpg')no-repeat center center/cover;;
+}
+
+.calories-tips h2 {
+  margin-bottom: 40px;
+}
+
+.tips-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tip {
+  background: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.tip h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.tip p {
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
